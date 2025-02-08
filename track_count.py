@@ -55,7 +55,7 @@ colors = {
 }
 
 # Load YOLOv8 model
-model = YOLO('E:\\AI_LAB\\vehicle_count\\yolov8_tracking-master\\weights\\best_track.pt')
+model = YOLO('weights/best_track.pt')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 logging.info(f"Model is running on: {device}")
 
@@ -136,6 +136,6 @@ def process_video(video_path):
 
 
 # Process the video
-process_video("people3.mp4")
+process_video("videos/people3.mp4")
 
 

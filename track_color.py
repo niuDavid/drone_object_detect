@@ -34,7 +34,7 @@ colors = {
 }
 
 # Load YOLOv8 model
-model = YOLO('best_track.pt')
+model = YOLO('weights/best_track.pt')
 #model = YOLO('yolov8s.pt')
 # model.half()
 
@@ -46,7 +46,7 @@ print(f"Model is running on: {device}")
 
 
 "可用摄像头"
-cap =cv2.VideoCapture("small_test5.mp4")
+cap =cv2.VideoCapture("videos/small_test5.mp4")
 
 # print(cv2.VideoCapture(stream_url).read())
 # print(cv2.VideoCapture(stream_url).isOpened)

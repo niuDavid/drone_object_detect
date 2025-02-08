@@ -50,7 +50,7 @@ colors = {
 }
 
 # Load YOLOv8 model
-model = YOLO('weights/yolov8n_best.pt')
+model = YOLO('weights/best_track.pt')
 # model = YOLO('best_track.pt')
 # model.half()
 
@@ -59,7 +59,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Model is running on: {device}")
 
 "可用摄像头"
-cap =cv2.VideoCapture("test_videos/test_videos/small_test5.mp4")
+cap =cv2.VideoCapture("videos/small_test5.mp4")
 # print(cv2.VideoCapture(stream_url).read())
 # print(cv2.VideoCapture(stream_url).isOpened)
 original_fps = cap.get(cv2.CAP_PROP_FPS)
